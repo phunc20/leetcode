@@ -15,6 +15,9 @@ But after the contest, I spent a few hours trying to solve it on my own.
 01. If you have time, try to estimate the time complexity of `aa_find_all_sums.py` and `ab` through `ae`.
 02. There are hints on this question and the following are links I found on the Internet:
 ```
+https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm
+https://www.youtube.com/watch?v=86CQq3pKSUw
+
 
 ```
 
