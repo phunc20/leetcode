@@ -8,4 +8,4 @@ solution is required to be a class and I spent some extra time, even having impl
 find one right syntax which can be accepted by leetcode.
 
 
-
+https://leetcode.com/problems/score-of-parentheses/solution/
