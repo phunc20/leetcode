@@ -1,6 +1,6 @@
 ## I failed to finish this question during the contest
 But after the contest, I spent a few hours trying to solve it on my own.
-- The following files are the effort. They are a bit messy, because I kind of tried to solve the problem by trial and error, without enough analyzing possible cases. Finally, `ae_split_cases.py` seems to be accepted as a solution.
+- The following files are the effort. They are a bit messy, because I kind of tried to solve the problem by trial and error, without sufficiently analyzing possible cases. Finally, `ae_split_cases.py` seems to be accepted as a solution.
   ```
   aa_find_all_sums.py
   ab_reduce_left_right.py
