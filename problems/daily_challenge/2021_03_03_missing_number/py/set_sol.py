@@ -1,6 +1,8 @@
 def missingNumber(nums):
     n = len(nums)
+    ## The following returns a set, not an int.
     #return set(range(n+1)) - set(nums)
+    ## The following results in an error -- Python set are not indexable.
     #return (set(range(n+1)) - set(nums))[0]
     return (set(range(n+1)) - set(nums)).pop()
 
