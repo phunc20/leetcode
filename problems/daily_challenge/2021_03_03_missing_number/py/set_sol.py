@@ -4,6 +4,8 @@ def missingNumber(nums):
     #return set(range(n+1)) - set(nums)
     ## The following results in an error -- Python set are not indexable.
     #return (set(range(n+1)) - set(nums))[0]
+    ## Note that pop() remove and return an ARBITRARY element from the set.
+    ## It works here because our set contains exactly one element.
     return (set(range(n+1)) - set(nums)).pop()
 
 def test_case(k, nums, expected):
