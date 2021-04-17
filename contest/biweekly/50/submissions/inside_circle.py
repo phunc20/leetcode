@@ -1,22 +1,20 @@
-#class Solution:
-#    def countPoints(self, points: List[List[int]], queries: List[List[int]]) -> List[int]:
-        
-def countPoints(points, queries):
-    # initialize answer with 0's
-    answer = [0 for _ in range(len(queries))]
-    # brute-force solution
-    def is_inside(pt, circle):
-        x, y ,r = circle
-        u, w = pt
-        return (x-u)**2 + (y-w)**2 <= r**2
-    #for j, (xj, yj, rj) in enumerate(queries):
-    for j, circle_j in enumerate(queries):
-        n_insiders = 0
-        for pt in points:
-            if is_inside(pt, circle_j):
-                n_insiders += 1
-        answer[j] = n_insiders
-    return answer
+class Solution:
+    def countPoints(self, points: List[List[int]], queries: List[List[int]]) -> List[int]:
+        # initialize answer with 0's
+        answer = [0 for _ in range(len(queries))]
+        # brute-force solution
+        def is_inside(pt, circle):
+            x, y ,r = circle
+            u, w = pt
+            return (x-u)**2 + (y-w)**2 <= r**2
+        #for j, (xj, yj, rj) in enumerate(queries):
+        for j, circle_j in enumerate(queries):
+            n_insiders = 0
+            for pt in points:
+                if is_inside(pt, circle_j):
+                    n_insiders += 1
+            answer[j] = n_insiders
+        return answer
 
 
 def test(points, queries, expected):
