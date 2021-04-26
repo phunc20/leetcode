@@ -12,6 +12,11 @@ def findErrorNums(nums):
     # Now, find the rightmost bit on which missing and repeated disagree
     rightmostbit = xor & ~(xor - 1)
     # (?) Why this works?
+    # (R) Take a concret example, say 10111100, if we subtract 1 from it,
+    #     we obtain 10111011, i.e. from the rightmost bit of 1 til the right end
+    #     those bits become the NOT of their corresponding bits in the original number.
+    #     Consequently, when we take its NOT, and AND with the original number, only
+    #     100 left, i.e. the rightmost bit of 1.
 
     # Divide nums into two subsets:
     # one with rightmost bit = 0, the other with rightmost bit = 1
