@@ -1,5 +1,11 @@
 #class Solution:
 #   def splitString(self, s: str) -> bool:
+
+
+"""
+Rmk.
+01. The leftmost number!
+"""
                
 def getMinDistance(nums, target, start):
     if nums[start] == target:
