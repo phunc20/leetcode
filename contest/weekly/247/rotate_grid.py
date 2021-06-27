@@ -1,6 +1,6 @@
-#class Solution:
-#    def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
-               
+import logging
+
+
 def rotateGrid(grid, k):
     """
     Let's rotate the grid layer after layer.
@@ -49,8 +49,14 @@ def rotateGrid(grid, k):
         topleft += 1
     return grid
 
-def visualize(grid):
-    pass
+def pretty_string(grid):
+    string = "\n"
+    for row in grid:
+        for element in row:
+            #print(f"{element: 5d}", end=" ")
+            string += f"{element: 5d} "
+        string += "\n"
+    return string
 
 
 counter = 1
@@ -61,8 +67,10 @@ def test(grid, k, expected):
     if sol == expected :
         print("Congrats!")
     else:
-        print(f"sol = {sol}")
-        print(f"expected = {expected}")
+        #print(f"expected = {expected}")
+        print(f"grid = {pretty_string(grid)}")
+        print(f"sol = {pretty_string(sol)}")
+        print(f"expected = {pretty_string(expected)}")
     print()
     counter += 1
 
